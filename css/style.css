@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Merriweather&family=Oswald&family=Pacifico&family=Sacramento&display=swap');
+
+:root {
+  --mainPink: #d64c63;
+}
+
+/* selection */
+::selection{
+  background: #222;
+  color: #fff;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* navbar */
+.navbar {
+  background: #323232;
+  font-size: 1.5rem;
+  padding: 0.2rem 4rem !important;
+  font-family: "Kaushan Script", cursive;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.navbar-toggler {
+  outline: none !important;
+  font-size: 2.5rem;
+  color: #77ACF1;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #FDEE0B;
+}
+
+.navbar-icon a {
+  color: #fff;
+  font-size: 1.23rem;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.navbar__icon {
+  border: 0.1rem solid #fff;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.8rem;
+}
+
+.navbar__icon:hover {
+  background: var(--mainPink);
+}
+
+.contact-number {
+  color: #fff;
+}
+
+.contact-email {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* end navbar */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../img/samgbhsBcg.jpg")center/cover fixed no-repeat;
+}
+
+.banner-title {
+  color: #3DC4D0;
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: 'Josefin Slab', serif;
+}
+
+.hero a {
+  text-decoration: none;
+}
+
+.banner-link {
+  background: #6B7AA1;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.8rem 2.3rem;
+  border: 0.25rem solid #222;
+  border-radius: 0.6rem;
+}
+
+.banner-link:hover {
+  color: #fff;
+  background: var(--cyan);
+}
+
+/* about section */
+.about-title {
+  color: var(--primary);
+  font-size: 3.5rem;
+  font-variant: small-caps;
+  font-style: italic;
+  font-family: 'Pacifico',
+    cursive;
+}
+
+.about-text p {
+  width: 75%;
+  letter-spacing: 0.4px;
+  font-size: 1.1rem;
+  color: #77ACF1;
+  font-family: 'Merriweather', serif;
+}
+
+.about-img-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.about-img-container::before {
+  content: '';
+  position: absolute;
+  top: -1.3rem;
+  left: -1.7rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.4rem solid var(--blue);
+  z-index: -1;
+  transition: all 500ms ease-in-out;
+}
+
+.about-img-container:hover::before {
+  top: 0;
+  left: 0;
+}
+
+/* gallery section */
+.gallery {
+  background: url(../img/gallerybcg2.jpg)center/cover fixed no-repeat;
+}
+
+.gallery h1,
+.gallery h4 {
+  color: #fff;
+  font-family: 'Josefin Slab', serif;
+}
+
+.gallery h4 {
+  font-size: 1.5rem;
+}
+
+/* footer */
+footer {
+  background: #323232;
+  color: #fff;
+}
+
+footer p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+}
+
+footer a {
+  color: #fff;
+  font-family: 'Sacramento', cursive;
+}
+
+footer .design {
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.4rem;
+}
+
+.btn-floating {
+  width: 2.45rem;
+  height: 2.45rem;
+  line-height: 1.9rem;
+  border-radius: 50%;
+}
+
+.btn-floating:hover {
+  background: var(--mainPink);
+  color: #fff;
+  border: none;
+}
+
+/* media query */
+@media screen and (max-width: 500px) {
+  .banner-title {
+    font-size: 2.5rem;
+  }
+}
